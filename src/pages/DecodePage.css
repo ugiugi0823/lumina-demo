@@ -1,0 +1,88 @@
+.decode-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.decode-container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 60px 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.decode-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  background: linear-gradient(135deg, #4eebc1, #7b61ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.decode-area {
+  margin-bottom: 30px;
+}
+
+.drop-zone {
+  border: 2px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 20px;
+  transition: border-color 0.3s;
+}
+
+.drop-zone:hover {
+  border-color: #4eebc1;
+}
+
+.drop-zone img {
+  max-width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.drop-zone p {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.9rem;
+}
+
+.decode-page .btn-primary {
+  padding: 15px 50px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #4eebc1, #7b61ff);
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.decode-page .btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 40px rgba(78, 235, 193, 0.4);
+}
+
+.watermark-info {
+  margin: 30px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.decode-page .back-link {
+  display: inline-block;
+  color: #4eebc1;
+  transition: opacity 0.3s;
+}
+
+.decode-page .back-link:hover {
+  opacity: 0.7;
+}
+

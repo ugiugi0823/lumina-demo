@@ -1,0 +1,91 @@
+{
+  "artist": {
+    "username": "demo_artist",
+    "instagram_id": "lumina_demo",
+    "bio": "LUMINA 데모 아티스트입니다. 다양한 스타일의 작품을 선보입니다.",
+    "unique_code": "LLL0001"
+  },
+  "artworks": [
+    {
+      "id": 1,
+      "title": "도시의 밤",
+      "description": "도시의 야경",
+      "price": 850000,
+      "year": 2024,
+      "materials": "Mixed media",
+      "image_path": "images/artworks/demo_1.webp",
+      "is_featured": true
+    },
+    {
+      "id": 2,
+      "title": "빛과 그림자",
+      "description": "빛과 그림자의 조화",
+      "price": 750000,
+      "year": 2023,
+      "materials": "Acrylic",
+      "image_path": "images/artworks/demo_2.webp",
+      "is_featured": false
+    },
+    {
+      "id": 3,
+      "title": "자연의 숨결",
+      "description": "자연의 아름다움",
+      "price": 600000,
+      "year": 2022,
+      "materials": "Oil on canvas",
+      "image_path": "images/artworks/demo_3.webp",
+      "is_featured": false
+    },
+    {
+      "id": 4,
+      "title": "동생의 초상",
+      "description": "인물화",
+      "price": 500000,
+      "year": 2022,
+      "materials": "Oil on canvas",
+      "image_path": "images/artworks/demo_4.webp",
+      "is_featured": false
+    },
+    {
+      "id": 5,
+      "title": "날개짓",
+      "description": "자유를 향한 비상",
+      "price": 700000,
+      "year": 2023,
+      "materials": "Mixed media",
+      "image_path": "images/artworks/demo_5.webp",
+      "is_featured": false
+    },
+    {
+      "id": 6,
+      "title": "눈밭의 친구들",
+      "description": "겨울 풍경화",
+      "price": 900000,
+      "year": 2023,
+      "materials": "Watercolor",
+      "image_path": "images/artworks/demo_6.webp",
+      "is_featured": false
+    },
+    {
+      "id": 7,
+      "title": "고요한 정원",
+      "description": "평화로운 정원 풍경",
+      "price": 800000,
+      "year": 2024,
+      "materials": "Acrylic",
+      "image_path": "images/artworks/demo_7.webp",
+      "is_featured": false
+    },
+    {
+      "id": 8,
+      "title": "희망을 향해",
+      "description": "희망을 표현한 작품",
+      "price": 500000,
+      "year": 2024,
+      "materials": "Oil on canvas",
+      "image_path": "images/artworks/demo_8.webp",
+      "is_featured": false
+    }
+  ]
+}
+

@@ -1,0 +1,101 @@
+.encode-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.encode-container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.encode-container h1 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.certificate {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  border: 2px solid #4eebc1;
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 40px;
+  box-shadow: 0 20px 60px rgba(78, 235, 193, 0.2);
+}
+
+.certificate h2 {
+  color: #4eebc1;
+  margin-bottom: 30px;
+  font-size: 1.8rem;
+}
+
+.star-image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 40px rgba(78, 235, 193, 0.3);
+}
+
+.star-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.certificate .info {
+  margin-bottom: 20px;
+}
+
+.certificate .info p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.certificate .info strong {
+  color: #4eebc1;
+}
+
+.certificate .disclaimer {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 0.85rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.encode-page .btn {
+  padding: 12px 30px;
+  border-radius: 25px;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.encode-page .btn-primary {
+  background: linear-gradient(135deg, #4eebc1, #7b61ff);
+  color: #000;
+}
+
+.encode-page .btn-secondary {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.encode-page .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(78, 235, 193, 0.3);
+}
+
