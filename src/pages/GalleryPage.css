@@ -338,8 +338,8 @@
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
+/* Responsive - 태블릿 이하에서만 사이드바 숨김 */
+@media (max-width: 768px) {
   .gallery-layout {
     flex-direction: column;
   }
@@ -354,7 +354,7 @@
 
   .sidebar-section {
     flex: 1;
-    min-width: 200px;
+    min-width: 150px;
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
@@ -372,7 +372,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .gallery-container {
     padding: 20px;
   }
