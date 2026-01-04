@@ -32,7 +32,36 @@ function GalleryPage() {
         </div>
       )}
 
-      {/* Gallery Content */}
+      {/* 사이드바 - 왼쪽 고정 */}
+      <aside className="sidebar">
+        <div className="sidebar-section">
+          <h3>작가 기능</h3>
+          <ul>
+            <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
+            <li><Link to="/encode">🔐 보증서 발급</Link></li>
+            <li><Link to="/find-star">🌟 별 찾기</Link></li>
+          </ul>
+        </div>
+        <div className="sidebar-section">
+          <h3>관객 기능</h3>
+          <ul>
+            <li><Link to="/dashboard2">🏆 이달의 작가</Link></li>
+            <li><Link to="/decode">🎫 초대권 확인</Link></li>
+          </ul>
+        </div>
+        <div className="sidebar-section">
+          <h3>작가 정보</h3>
+          <p>작품 수 <span>{artworks.length}</span></p>
+          <p>가입일 <span>2024</span></p>
+        </div>
+        <div className="sidebar-section">
+          <ul>
+            <li><Link to="/">🏠 홈으로</Link></li>
+          </ul>
+        </div>
+      </aside>
+
+      {/* 메인 콘텐츠 */}
       <div className={`gallery-container ${isLoading ? 'hidden' : 'visible'}`}>
         <header className="gallery-header">
           <h1>{artist.username} 작가님의 갤러리</h1>
@@ -45,54 +74,27 @@ function GalleryPage() {
             <img src="/images/insta.png" alt="Instagram" />
             <span>@{artist.instagram_id}</span>
           </a>
-          <Link to="/" className="back-link">홈으로</Link>
         </header>
 
-        <div className="gallery-layout">
-          {/* Sidebar */}
-          <aside className="sidebar">
-            <div className="sidebar-section">
-              <h3>🎨 작가 기능</h3>
-              <ul>
-                <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
-                <li><Link to="/encode">🔐 보증서 발급</Link></li>
-                <li><Link to="/find-star">🌟 별 찾기</Link></li>
-              </ul>
-            </div>
-            <div className="sidebar-section">
-              <h3>👀 관객 기능</h3>
-              <ul>
-                <li><Link to="/dashboard2">🏆 이달의 작가</Link></li>
-                <li><Link to="/decode">🎫 초대권 확인</Link></li>
-              </ul>
-            </div>
-            <div className="sidebar-section">
-              <h3>📊 작가 정보</h3>
-              <p>작품 수: <span>{artworks.length}</span></p>
-              <p>가입일: <span>2024</span></p>
-            </div>
-          </aside>
-
-          {/* Gallery Grid */}
-          <main className="gallery-main">
-            <div className="gallery-grid">
-              {artworks.map((artwork, index) => (
-                <div 
-                  key={artwork.id} 
-                  className={`gallery-item ${index === 0 ? 'featured' : ''}`}
-                  onClick={() => setSelectedArtwork(artwork)}
-                >
-                  <img src={`/${artwork.image_path}`} alt={artwork.title} />
-                  <div className="artwork-info">
-                    <h3>{artwork.title}</h3>
-                    <p>{artwork.description}</p>
-                    <p className="price">{formatPrice(artwork.price)}</p>
-                  </div>
+        {/* Gallery Grid */}
+        <main className="gallery-main">
+          <div className="gallery-grid">
+            {artworks.map((artwork, index) => (
+              <div 
+                key={artwork.id} 
+                className={`gallery-item ${index === 0 ? 'featured' : ''}`}
+                onClick={() => setSelectedArtwork(artwork)}
+              >
+                <img src={`/${artwork.image_path}`} alt={artwork.title} />
+                <div className="artwork-info">
+                  <h3>{artwork.title}</h3>
+                  <p>{artwork.description}</p>
+                  <p className="price">{formatPrice(artwork.price)}</p>
                 </div>
-              ))}
-            </div>
-          </main>
-        </div>
+              </div>
+            ))}
+          </div>
+        </main>
 
         <footer className="gallery-footer">
           <p>&copy; 2024 LUMINA. All rights reserved.</p>
@@ -118,4 +120,3 @@ function GalleryPage() {
 }
 
 export default GalleryPage
-
