@@ -36,41 +36,59 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Problem Section */}
+      <section className="problem-section">
+        <div className="container">
+          <h2 className="section-title">우리가 해결하고자 한 문제</h2>
+          
+          <div className="problem-cards">
+            <div className="problem-card">
+              <div className="problem-icon">😔</div>
+              <h3>작가 보증의 부재</h3>
+              <p>청년 예술가들이 자신의 작품을 보증할 수 있는 신뢰할 수 있는 수단이 없었습니다.</p>
+            </div>
+            <div className="problem-card">
+              <div className="problem-icon">💻</div>
+              <h3>포트폴리오 구축의 어려움</h3>
+              <p>나만의 갤러리 웹사이트, 포트폴리오 사이트를 만드는 것이 기술적으로 어려웠습니다.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Solution Section */}
       <section className="features">
         <div className="container">
-          <h2 className="section-title">LUMINA: 당신의 예술을 우주로</h2>
+          <h2 className="section-title">LUMINA의 솔루션</h2>
           
           <div className="feature-group">
-            <h3 className="feature-group-title">당신이 아티스트라면!</h3>
-            
             <div className="feature">
-              <div className="feature-media">
-                <img src="/images/make_star.png" alt="나만의 별 만들기" />
-              </div>
+              <div className="feature-icon-box">🔐</div>
               <div className="feature-content">
-                <h4>나만의 별 만들기</h4>
-                <p>당신의 예술 세계를 대표하는 유니크한 별을 창조하세요. 색상과 모양을 선택하여 작품의 아이덴티티를 표현하고, 당신만의 예술 은하계를 펼쳐보세요.</p>
+                <h4>Invisible 워터마크 & YOLO 탐지</h4>
+                <p>자체 개발한 Invisible 워터마크 모델과 YOLO 탐지 기술로 작가 보증 체계를 구축했습니다. 작품에 눈에 보이지 않는 디지털 서명을 삽입하여 진위를 확인할 수 있습니다.</p>
+                <span className="tech-tag">Deep Learning</span>
+                <span className="tech-tag">Computer Vision</span>
               </div>
             </div>
 
             <div className="feature">
-              <div className="feature-media">
-                <img src="/images/insta.png" alt="보증서 발급" />
-              </div>
+              <div className="feature-icon-box">🖼️</div>
               <div className="feature-content">
-                <h4>보증서 발급 & SNS 홍보</h4>
-                <p>LUMINA는 작가님의 고유한 정보를 담은 별 이미지와 보증서를 발급해 드립니다.</p>
+                <h4>나만의 갤러리 구축</h4>
+                <p>코딩 없이도 누구나 쉽게 자신만의 온라인 갤러리를 만들 수 있습니다. 전문적인 포트폴리오 웹사이트를 몇 분 안에 완성할 수 있습니다.</p>
+                <span className="tech-tag">No-Code</span>
+                <span className="tech-tag">Responsive Design</span>
               </div>
             </div>
 
             <div className="feature">
-              <div className="feature-media">
-                <img src="/images/gallery.png" alt="온라인 갤러리" />
-              </div>
+              <div className="feature-icon-box">🤖</div>
               <div className="feature-content">
-                <h4>온라인 갤러리 & 굿즈 제작</h4>
-                <p>당신만의 온라인 갤러리를 만들고 작품을 전시하세요. 더 나아가 자신의 작품을 활용한 독특한 굿즈를 제작하여 팬들과 특별한 인연을 만들어보세요.</p>
+                <h4>AI 자동 캡션 생성</h4>
+                <p>GPT API를 활용하여 작품 이미지를 분석하고 자동으로 캡션을 생성합니다. 작가는 작품에만 집중할 수 있습니다.</p>
+                <span className="tech-tag">GPT-4 Vision</span>
+                <span className="tech-tag">Image Analysis</span>
               </div>
             </div>
           </div>
