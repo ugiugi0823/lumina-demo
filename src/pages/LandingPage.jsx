@@ -25,6 +25,10 @@ function LandingPage() {
         <div className="container">
           <h1 className="hero-title">당신의 예술, 우주의 빛이 되다</h1>
           <p className="hero-subtitle">LUMINA와 함께 무한한 은하계로 도약하세요</p>
+          <p className="demo-notice">
+            본 서비스는 사업 종료로 데모 페이지로 운영됩니다<br />
+            <span className="demo-period">2023.08.01 – 2025.03.01</span>
+          </p>
           <div className="cta-buttons">
             <Link to="/gallery/artist" className="cta-button">작가로 시작하기</Link>
             <Link to="/dashboard2" className="cta-button">관객으로 시작하기</Link>
