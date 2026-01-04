@@ -54,8 +54,8 @@ function LandingPage() {
             </div>
             <div className="problem-card">
               <div className="problem-icon">📝</div>
-              <h3>SNS 홍보 캡션 고민</h3>
-              <p>인스타그램 홍보용 그림 캡션을 매번 작성하는 것이 시간이 오래 걸리고 어려웠습니다.</p>
+              <h3>홍보용 해시태그 고민</h3>
+              <p>인스타그램 홍보용 해시태그를 매번 생성하는 것이 시간이 오래 걸리고 어려웠습니다.</p>
             </div>
           </div>
         </div>
