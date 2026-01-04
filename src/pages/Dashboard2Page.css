@@ -1,83 +1,17 @@
-/* ChatGPT 스타일 레이아웃 - 관객 페이지 */
+/* 이달의 작가 페이지 - 사이드바 없음 */
 .dashboard2-page {
-  display: flex;
   min-height: 100vh;
   position: relative;
-}
-
-/* 사이드바 - 왼쪽 고정 */
-.dashboard2-page .sidebar {
-  width: 260px;
-  min-height: 100vh;
-  background: rgba(10, 10, 10, 0.95);
-  border-right: 1px solid rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  overflow-y: auto;
-  z-index: 100;
-}
-
-.dashboard2-page .sidebar-section {
-  margin-bottom: 24px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.dashboard2-page .sidebar-section:last-child {
-  margin-bottom: 0;
-  padding-bottom: 0;
-  border-bottom: none;
-}
-
-.dashboard2-page .sidebar-section h3 {
-  font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.5);
-  margin-bottom: 16px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
-}
-
-.dashboard2-page .sidebar-section ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.dashboard2-page .sidebar-section li {
-  margin-bottom: 4px;
-}
-
-.dashboard2-page .sidebar-section a {
   display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 12px 14px;
-  border-radius: 10px;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
-  transition: all 0.2s;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
 }
 
-.dashboard2-page .sidebar-section a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: #fff;
-}
-
-.dashboard2-page .sidebar-section p {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 0.85rem;
-  margin-bottom: 6px;
-  line-height: 1.5;
-}
-
-/* 메인 콘텐츠 영역 */
+/* 메인 콘텐츠 영역 - 중앙 정렬 */
 .dashboard2-page .dashboard-container {
-  margin-left: 260px;
-  flex: 1;
-  padding: 40px;
+  max-width: 600px;
+  width: 100%;
   position: relative;
   z-index: 1;
   display: flex;
@@ -91,7 +25,6 @@
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   width: 100%;
-  max-width: 600px;
 }
 
 .dashboard2-page .dashboard-header h1 {
@@ -169,6 +102,7 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .dashboard2-page .btn-primary {
@@ -193,6 +127,27 @@
   font-size: 0.85rem;
 }
 
+/* 네비게이션 링크 */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 10px 20px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .dashboard-footer {
   margin-top: 60px;
   padding: 40px;
@@ -205,20 +160,10 @@
 /* 반응형 - 모바일 */
 @media (max-width: 768px) {
   .dashboard2-page {
-    flex-direction: column;
-  }
-
-  .dashboard2-page .sidebar {
-    width: 100%;
-    height: auto;
-    min-height: auto;
-    position: relative;
-    border-right: none;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  }
-
-  .dashboard2-page .dashboard-container {
-    margin-left: 0;
     padding: 20px;
+  }
+
+  .dashboard2-page .dashboard-header h1 {
+    font-size: 1.4rem;
   }
 }
