@@ -1,6 +1,6 @@
 {
   "artist": {
-    "username": "demo_artist",
+    "username": "Demo Artist",
     "instagram_id": "lumina_demo",
     "bio": "LUMINA 데모 아티스트입니다. 다양한 스타일의 작품을 선보입니다.",
     "unique_code": "LLL0001"
@@ -8,84 +8,83 @@
   "artworks": [
     {
       "id": 1,
-      "title": "도시의 밤",
-      "description": "도시의 야경",
+      "title": "은빛 물결",
+      "description": "물고기 떼의 역동적인 움직임을 담은 펜 스케치",
       "price": 850000,
       "year": 2024,
-      "materials": "Mixed media",
+      "materials": "Ink on paper",
       "image_path": "images/artworks/demo_1.webp",
       "is_featured": true
     },
     {
       "id": 2,
-      "title": "빛과 그림자",
-      "description": "빛과 그림자의 조화",
+      "title": "꽃피는 사랑",
+      "description": "연인의 실루엣을 꽃으로 채운 수채화",
       "price": 750000,
       "year": 2023,
-      "materials": "Acrylic",
+      "materials": "Watercolor",
       "image_path": "images/artworks/demo_2.webp",
       "is_featured": false
     },
     {
       "id": 3,
-      "title": "자연의 숨결",
-      "description": "자연의 아름다움",
+      "title": "목욕시간",
+      "description": "분홍 욕조 속 노란 오리들의 귀여운 유화",
       "price": 600000,
-      "year": 2022,
+      "year": 2024,
       "materials": "Oil on canvas",
       "image_path": "images/artworks/demo_3.webp",
       "is_featured": false
     },
     {
       "id": 4,
-      "title": "동생의 초상",
-      "description": "인물화",
-      "price": 500000,
-      "year": 2022,
-      "materials": "Oil on canvas",
+      "title": "붉은 노을의 후지산",
+      "description": "일몰 하늘 아래 신비로운 후지산 풍경",
+      "price": 900000,
+      "year": 2023,
+      "materials": "Digital art",
       "image_path": "images/artworks/demo_4.webp",
       "is_featured": false
     },
     {
       "id": 5,
-      "title": "날개짓",
-      "description": "자유를 향한 비상",
+      "title": "원시의 사냥꾼",
+      "description": "괴물을 향해 뛰어드는 용맹한 전사의 펜화",
       "price": 700000,
       "year": 2023,
-      "materials": "Mixed media",
+      "materials": "Ink on paper",
       "image_path": "images/artworks/demo_5.webp",
       "is_featured": false
     },
     {
       "id": 6,
-      "title": "눈밭의 친구들",
-      "description": "겨울 풍경화",
-      "price": 900000,
-      "year": 2023,
-      "materials": "Watercolor",
+      "title": "청색 초상",
+      "description": "시아노타입 기법으로 표현한 신비로운 얼굴들",
+      "price": 800000,
+      "year": 2024,
+      "materials": "Cyanotype",
       "image_path": "images/artworks/demo_6.webp",
       "is_featured": false
     },
     {
       "id": 7,
-      "title": "고요한 정원",
-      "description": "평화로운 정원 풍경",
-      "price": 800000,
+      "title": "구름 사이 여정",
+      "description": "붉은 태양을 향해 걸어가는 고독한 여행자",
+      "price": 950000,
       "year": 2024,
-      "materials": "Acrylic",
+      "materials": "Digital illustration",
       "image_path": "images/artworks/demo_7.webp",
       "is_featured": false
     },
     {
       "id": 8,
-      "title": "희망을 향해",
-      "description": "희망을 표현한 작품",
-      "price": 500000,
+      "title": "무사의 여명",
+      "description": "붉은 태양 아래 서 있는 사무라이 수묵화",
+      "price": 1200000,
       "year": 2024,
-      "materials": "Oil on canvas",
+      "materials": "Ink wash",
       "image_path": "images/artworks/demo_8.webp",
       "is_featured": false
     }
   ]
 }
-

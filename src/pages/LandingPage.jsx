@@ -4,14 +4,14 @@ import Header from '../components/Header'
 import './LandingPage.css'
 
 const artworks = [
-  { id: 1, title: "희망을 향해", artist: "Demo Artist", price: "₩500,000", image: "/images/artworks/demo_1.webp" },
-  { id: 2, title: "고요한 정원", artist: "Demo Artist", price: "₩800,000", image: "/images/artworks/demo_2.webp" },
-  { id: 3, title: "눈밭의 친구들", artist: "Demo Artist", price: "₩900,000", image: "/images/artworks/demo_3.webp" },
-  { id: 4, title: "날개짓", artist: "Demo Artist", price: "₩700,000", image: "/images/artworks/demo_4.webp" },
-  { id: 5, title: "동생의 초상", artist: "Demo Artist", price: "₩500,000", image: "/images/artworks/demo_5.webp" },
-  { id: 6, title: "자연의 숨결", artist: "Demo Artist", price: "₩600,000", image: "/images/artworks/demo_6.webp" },
-  { id: 7, title: "빛과 그림자", artist: "Demo Artist", price: "₩750,000", image: "/images/artworks/demo_7.webp" },
-  { id: 8, title: "도시의 밤", artist: "Demo Artist", price: "₩850,000", image: "/images/artworks/demo_8.webp" },
+  { id: 1, title: "은빛 물결", artist: "Demo Artist", price: "₩850,000", image: "/images/artworks/demo_1.webp" },
+  { id: 2, title: "꽃피는 사랑", artist: "Demo Artist", price: "₩750,000", image: "/images/artworks/demo_2.webp" },
+  { id: 3, title: "목욕시간", artist: "Demo Artist", price: "₩600,000", image: "/images/artworks/demo_3.webp" },
+  { id: 4, title: "붉은 노을의 후지산", artist: "Demo Artist", price: "₩900,000", image: "/images/artworks/demo_4.webp" },
+  { id: 5, title: "원시의 사냥꾼", artist: "Demo Artist", price: "₩700,000", image: "/images/artworks/demo_5.webp" },
+  { id: 6, title: "청색 초상", artist: "Demo Artist", price: "₩800,000", image: "/images/artworks/demo_6.webp" },
+  { id: 7, title: "구름 사이 여정", artist: "Demo Artist", price: "₩950,000", image: "/images/artworks/demo_7.webp" },
+  { id: 8, title: "무사의 여명", artist: "Demo Artist", price: "₩1,200,000", image: "/images/artworks/demo_8.webp" },
 ]
 
 function LandingPage() {

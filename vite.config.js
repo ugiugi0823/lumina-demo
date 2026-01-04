@@ -8,7 +8,8 @@ export default defineConfig({
   // 레포지토리 이름에 맞게 base를 설정하세요
   // 예: base: '/lumina/' (GitHub Pages용)
   // 로컬 개발: base: '/'
-  base: process.env.NODE_ENV === 'production' ? '/lumina-demo/' : '/',
+  // Vercel: '/' / GitHub Pages: '/lumina-demo/'
+  base: '/',
   build: {
     outDir: 'dist'
   }
