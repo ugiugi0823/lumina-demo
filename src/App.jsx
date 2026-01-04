@@ -15,7 +15,9 @@ function App() {
     <Router basename={import.meta.env.BASE_URL}>
       <Routes>
         <Route path="/" element={<LandingPage />} />
-        <Route path="/gallery" element={<GalleryPage />} />
+        <Route path="/gallery/artist" element={<GalleryPage role="artist" />} />
+        <Route path="/gallery/audience" element={<GalleryPage role="audience" />} />
+        <Route path="/gallery" element={<GalleryPage role="artist" />} />
         <Route path="/dashboard1" element={<Dashboard1Page />} />
         <Route path="/dashboard2" element={<Dashboard2Page />} />
         <Route path="/decode" element={<DecodePage />} />

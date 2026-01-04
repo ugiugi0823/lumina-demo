@@ -4,7 +4,7 @@ import Stars from '../components/Stars'
 import artworksData from '../data/artworks.json'
 import './GalleryPage.css'
 
-function GalleryPage() {
+function GalleryPage({ role = 'artist' }) {
   const [isLoading, setIsLoading] = useState(true)
   const [selectedArtwork, setSelectedArtwork] = useState(null)
   const { artist, artworks } = artworksData
@@ -32,22 +32,42 @@ function GalleryPage() {
         </div>
       )}
 
-      {/* 사이드바 - 작가 전용 */}
+      {/* 사이드바 - role에 따라 다른 메뉴 */}
       <aside className="sidebar">
-        <div className="sidebar-section">
-          <h3>작가 메뉴</h3>
-          <ul>
-            <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
-            <li><Link to="/encode">🔐 보증서 발급</Link></li>
-            <li><Link to="/find-star">🌟 별 찾기</Link></li>
-            <li><Link to="/decode">📋 보증서 확인</Link></li>
-          </ul>
-        </div>
-        <div className="sidebar-section">
-          <h3>작가 정보</h3>
-          <p>작품 수 <span>{artworks.length}</span></p>
-          <p>가입일 <span>2024</span></p>
-        </div>
+        {role === 'artist' ? (
+          <>
+            <div className="sidebar-section">
+              <h3>작가 메뉴</h3>
+              <ul>
+                <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
+                <li><Link to="/encode">🔐 보증서 발급</Link></li>
+                <li><Link to="/find-star">🌟 별 찾기</Link></li>
+                <li><Link to="/decode">📋 보증서 확인</Link></li>
+              </ul>
+            </div>
+            <div className="sidebar-section">
+              <h3>작가 정보</h3>
+              <p>작품 수 <span>{artworks.length}</span></p>
+              <p>가입일 <span>2024</span></p>
+            </div>
+          </>
+        ) : (
+          <>
+            <div className="sidebar-section">
+              <h3>관객 메뉴</h3>
+              <ul>
+                <li><Link to="/dashboard2">🏆 이달의 작가</Link></li>
+                <li><Link to="/decode">🎫 초대권 확인</Link></li>
+              </ul>
+            </div>
+            <div className="sidebar-section">
+              <h3>서비스 안내</h3>
+              <p>초대권을 다운로드하고</p>
+              <p>초대권 확인에서 업로드하면</p>
+              <p>작가 갤러리로 이동합니다</p>
+            </div>
+          </>
+        )}
         <div className="sidebar-section">
           <ul>
             <li><Link to="/">🏠 홈으로</Link></li>

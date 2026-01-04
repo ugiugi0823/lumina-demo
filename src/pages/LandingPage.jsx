@@ -32,8 +32,8 @@ function LandingPage() {
       <section className="cta-section">
         <div className="container">
           <div className="cta-buttons">
-            <Link to="/gallery" className="cta-button">작가로 시작하기</Link>
-            <Link to="/dashboard2" className="cta-button">관객으로 시작하기</Link>
+            <Link to="/gallery/artist" className="cta-button">작가로 시작하기</Link>
+            <Link to="/gallery/audience" className="cta-button">관객으로 시작하기</Link>
           </div>
         </div>
       </section>
