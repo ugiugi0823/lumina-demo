@@ -1,16 +1,88 @@
+/* ChatGPT 스타일 레이아웃 - 관객 페이지 */
 .dashboard2-page {
+  display: flex;
   min-height: 100vh;
+  position: relative;
+}
+
+/* 사이드바 - 왼쪽 고정 */
+.dashboard2-page .sidebar {
+  width: 260px;
+  min-height: 100vh;
+  background: rgba(10, 10, 10, 0.95);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.dashboard2-page .sidebar-section {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashboard2-page .sidebar-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.dashboard2-page .sidebar-section h3 {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 16px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.dashboard2-page .sidebar-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dashboard2-page .sidebar-section li {
+  margin-bottom: 4px;
+}
+
+.dashboard2-page .sidebar-section a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.95rem;
+  transition: all 0.2s;
+}
+
+.dashboard2-page .sidebar-section a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.dashboard2-page .sidebar-section p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  line-height: 1.5;
+}
+
+/* 메인 콘텐츠 영역 */
+.dashboard2-page .dashboard-container {
+  margin-left: 260px;
+  flex: 1;
+  padding: 40px;
+  position: relative;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 20px;
-}
-
-.dashboard2-page .dashboard-container {
-  max-width: 800px;
-  width: 100%;
-  position: relative;
-  z-index: 1;
 }
 
 .dashboard2-page .dashboard-header {
@@ -18,10 +90,12 @@
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 600px;
 }
 
 .dashboard2-page .dashboard-header h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   background: linear-gradient(135deg, #4eebc1, #7b61ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -30,14 +104,15 @@
 
 .featured-artwork {
   text-align: center;
+  max-width: 500px;
+  width: 100%;
 }
 
 .featured-artwork .artwork-image {
-  max-width: 500px;
-  margin: 0 auto 30px;
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  margin-bottom: 24px;
 }
 
 .featured-artwork .artwork-image img {
@@ -46,7 +121,7 @@
 }
 
 .featured-artwork .artwork-info h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #f4d03f;
   margin-bottom: 10px;
 }
@@ -62,10 +137,11 @@
 .watermark-section h3 {
   color: #4eebc1;
   margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 .watermark-image {
-  max-width: 300px;
+  max-width: 200px;
   margin: 0 auto;
   border-radius: 15px;
   overflow: hidden;
@@ -114,13 +190,35 @@
   text-align: center;
   color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
 }
 
 .dashboard-footer {
-  margin-top: auto;
+  margin-top: 60px;
   padding: 40px;
   text-align: center;
   color: rgba(255, 255, 255, 0.4);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
 }
 
+/* 반응형 - 모바일 */
+@media (max-width: 768px) {
+  .dashboard2-page {
+    flex-direction: column;
+  }
+
+  .dashboard2-page .sidebar {
+    width: 100%;
+    height: auto;
+    min-height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .dashboard2-page .dashboard-container {
+    margin-left: 0;
+    padding: 20px;
+  }
+}

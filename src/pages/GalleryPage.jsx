@@ -32,21 +32,15 @@ function GalleryPage() {
         </div>
       )}
 
-      {/* 사이드바 - 왼쪽 고정 */}
+      {/* 사이드바 - 작가 전용 */}
       <aside className="sidebar">
         <div className="sidebar-section">
-          <h3>작가 기능</h3>
+          <h3>작가 메뉴</h3>
           <ul>
             <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
             <li><Link to="/encode">🔐 보증서 발급</Link></li>
             <li><Link to="/find-star">🌟 별 찾기</Link></li>
-          </ul>
-        </div>
-        <div className="sidebar-section">
-          <h3>관객 기능</h3>
-          <ul>
-            <li><Link to="/dashboard2">🏆 이달의 작가</Link></li>
-            <li><Link to="/decode">🎫 초대권 확인</Link></li>
+            <li><Link to="/decode">📋 보증서 확인</Link></li>
           </ul>
         </div>
         <div className="sidebar-section">
