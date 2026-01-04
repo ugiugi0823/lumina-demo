@@ -21,7 +21,7 @@ function Dashboard2Page() {
           <ul>
             <li><Link to="/dashboard2">🏆 이달의 작가</Link></li>
             <li><Link to="/decode">🎫 초대권 확인</Link></li>
-            <li><Link to="/gallery">🖼️ 작가 갤러리</Link></li>
+            <li><Link to="/gallery/audience">🖼️ 작가 갤러리</Link></li>
           </ul>
         </div>
         <div className="sidebar-section">

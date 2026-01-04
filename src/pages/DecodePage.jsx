@@ -6,7 +6,7 @@ function DecodePage() {
   const navigate = useNavigate()
 
   const handleDecode = () => {
-    navigate('/gallery')
+    navigate('/gallery/audience')
   }
 
   return (
