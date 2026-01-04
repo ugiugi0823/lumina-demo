@@ -25,12 +25,6 @@ function LandingPage() {
         <div className="container">
           <h1 className="hero-title">당신의 예술, 우주의 빛이 되다</h1>
           <p className="hero-subtitle">LUMINA와 함께 무한한 은하계로 도약하세요</p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="cta-section">
-        <div className="container">
           <div className="cta-buttons">
             <Link to="/gallery/artist" className="cta-button">작가로 시작하기</Link>
             <Link to="/dashboard2" className="cta-button">관객으로 시작하기</Link>
