@@ -43,6 +43,9 @@ function GalleryPage({ role = 'artist' }) {
                 <li><Link to="/encode">🔐 보증서 발급</Link></li>
                 <li><Link to="/find-star">🌟 별 찾기</Link></li>
                 <li><Link to="/decode">📋 보증서 확인</Link></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); alert('🤖 GPT-4 Vision API를 활용한 자동 캡션 생성 기능입니다. (데모)') }}>🤖 자동 캡션 생성</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); alert('🖼️ 작품 업로드 기능입니다. (데모)') }}>🖼️ 작품 업로드</a></li>
+                <li><a href="#" onClick={(e) => { e.preventDefault(); alert('🎨 나만의 배경색 변경 기능입니다. (데모)') }}>🎨 배경색 변경</a></li>
               </ul>
             </div>
             <div className="sidebar-section">
