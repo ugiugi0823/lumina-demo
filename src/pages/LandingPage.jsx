@@ -129,7 +129,6 @@ function LandingPage() {
       <footer className="landing-footer">
         <div className="container">
           <p>&copy; 2024 LUMINA. 무한한 가능성을 향해 함께 나아갑니다.</p>
-          <Link to="/dashboard1" className="cta-button">LUMINA 시작하기</Link>
         </div>
       </footer>
     </div>
