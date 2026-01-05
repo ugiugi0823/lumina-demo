@@ -42,10 +42,9 @@
 }
 
 .featured-artwork .artwork-image {
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
-  margin-bottom: 24px;
 }
 
 .featured-artwork .artwork-image img {
@@ -53,18 +52,26 @@
   display: block;
 }
 
+.featured-artwork .artwork-info {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 30px;
+}
+
 .featured-artwork .artwork-info h2 {
   font-size: 1.5rem;
   color: #f4d03f;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .featured-artwork .artwork-info p {
   color: rgba(255, 255, 255, 0.7);
+  margin: 0;
 }
 
 .watermark-section {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .watermark-section h3 {
