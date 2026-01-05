@@ -41,7 +41,6 @@ function GalleryPage({ role = 'artist' }) {
               <ul>
                 <li><Link to="/customize-star">✨ 워터마크 삽입하기</Link></li>
                 <li><Link to="/encode">🔐 보증서 발급</Link></li>
-                <li><Link to="/find-star">🌟 별 찾기</Link></li>
                 <li><Link to="/decode">📋 보증서 확인</Link></li>
                 <li><Link to="/auto-caption">🤖 자동 캡션 생성</Link></li>
                 <li><Link to="/upload-artwork">🖼️ 작품 업로드</Link></li>
