@@ -44,14 +44,15 @@ function AutoCaptionPage() {
     if (!selectedImage) return
     
     setIsGenerating(true)
-    // 타이핑 효과 시뮬레이션
+    // 타이핑 효과 시뮬레이션 (이모지 지원)
     const fullCaption = demoCaptions[selectedImage.id]
+    const chars = Array.from(fullCaption) // 이모지를 올바르게 분리
     let index = 0
     setCaption('')
     
     const typeInterval = setInterval(() => {
-      if (index < fullCaption.length) {
-        setCaption(prev => prev + fullCaption[index])
+      if (index < chars.length) {
+        setCaption(prev => prev + chars[index])
         index++
       } else {
         clearInterval(typeInterval)
