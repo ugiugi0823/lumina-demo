@@ -39,7 +39,7 @@ function GalleryPage({ role = 'artist' }) {
             <div className="sidebar-section">
               <h3>작가 메뉴</h3>
               <ul>
-                <li><Link to="/customize-star">✨ 나만의 별 만들기</Link></li>
+                <li><Link to="/customize-star">✨ 워터마크 삽입하기</Link></li>
                 <li><Link to="/encode">🔐 보증서 발급</Link></li>
                 <li><Link to="/find-star">🌟 별 찾기</Link></li>
                 <li><Link to="/decode">📋 보증서 확인</Link></li>
