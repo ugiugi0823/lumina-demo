@@ -1,0 +1,228 @@
+.background-color-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  transition: background-color 0.5s;
+}
+
+.color-container {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 50px 40px;
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.color-container h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  background: linear-gradient(135deg, var(--custom-accent, #4eebc1), #7b61ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.color-container .subtitle {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 40px;
+}
+
+.color-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.preset-section h3,
+.custom-section h3,
+.preview-section h3 {
+  font-size: 1.1rem;
+  color: var(--custom-accent, #4eebc1);
+  margin-bottom: 20px;
+}
+
+.preset-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.preset-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 2px solid;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.preset-btn:hover {
+  transform: scale(1.05);
+}
+
+.accent-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.preset-name {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.9rem;
+}
+
+.color-pickers {
+  display: flex;
+  gap: 30px;
+}
+
+.color-picker-group {
+  flex: 1;
+}
+
+.color-picker-group label {
+  display: block;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+}
+
+.picker-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px 15px;
+  border-radius: 12px;
+}
+
+.picker-wrapper input[type="color"] {
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: transparent;
+}
+
+.picker-wrapper input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.picker-wrapper input[type="color"]::-webkit-color-swatch {
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.picker-wrapper span {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: monospace;
+  font-size: 0.95rem;
+}
+
+.preview-card {
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  min-height: 200px;
+}
+
+.preview-header h4 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-left: 80px;
+}
+
+.preview-item {
+  aspect-ratio: 1;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+}
+
+.preview-sidebar {
+  position: absolute;
+  left: 20px;
+  top: 60px;
+  width: 60px;
+  padding: 10px;
+  border-right: 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-item {
+  height: 30px;
+  border-radius: 6px;
+}
+
+.color-container .btn {
+  padding: 14px 40px;
+  border-radius: 25px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.color-container .btn-primary {
+  background: linear-gradient(135deg, var(--custom-accent, #4eebc1), #7b61ff);
+  color: #000;
+}
+
+.color-container .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(78, 235, 193, 0.3);
+}
+
+.color-container .back-link {
+  display: inline-block;
+  color: var(--custom-accent, #4eebc1);
+  margin-top: 30px;
+  transition: opacity 0.3s;
+}
+
+.color-container .back-link:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .preset-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .color-pickers {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .preview-grid {
+    margin-left: 0;
+  }
+
+  .preview-sidebar {
+    display: none;
+  }
+
+  .color-container {
+    padding: 30px 20px;
+  }
+}
+

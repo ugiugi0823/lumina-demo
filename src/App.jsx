@@ -7,6 +7,9 @@ import DecodePage from './pages/DecodePage'
 import EncodePage from './pages/EncodePage'
 import CustomizeStarPage from './pages/CustomizeStarPage'
 import FindStarPage from './pages/FindStarPage'
+import AutoCaptionPage from './pages/AutoCaptionPage'
+import UploadArtworkPage from './pages/UploadArtworkPage'
+import BackgroundColorPage from './pages/BackgroundColorPage'
 import NotFoundPage from './pages/NotFoundPage'
 import './App.css'
 
@@ -24,6 +27,9 @@ function App() {
         <Route path="/encode" element={<EncodePage />} />
         <Route path="/customize-star" element={<CustomizeStarPage />} />
         <Route path="/find-star" element={<FindStarPage />} />
+        <Route path="/auto-caption" element={<AutoCaptionPage />} />
+        <Route path="/upload-artwork" element={<UploadArtworkPage />} />
+        <Route path="/background-color" element={<BackgroundColorPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </Router>
