@@ -28,6 +28,7 @@ function EncodePage() {
             보증서 다운로드
           </a>
           <Link to="/decode" className="btn btn-secondary">보증서 증명</Link>
+          <Link to="/gallery/artist" className="btn btn-secondary">🖼️ 갤러리로 가기</Link>
           <Link to="/" className="btn btn-secondary">홈으로</Link>
         </div>
       </div>
